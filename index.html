@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>cestina ebanaya</title>
+</head>
+<body onload="run()">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+    </style>
+    <script src="main.js"></script>
+    <div class="wrapper">
+        <div class="block">
+            <div class="output">
+                OUTPUT <br>
+                <textarea name="" id="output" rows="1"></textarea>
+            </div>
+            <div class="input">
+                INPUT <br>
+                <textarea id="input" rows="1"  onkeypress="process(event, this)"></textarea>
+                <!--<input type="text" class="form-control" id="input" value="" dir="ltr" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />-->
+                
+            </div>
+            <button onclick="hideSettings()">настройки</button>
+
+            <div class="settings" id="settings">
+                SETTINGS
+                <textarea name="" id="alise" cols="40" rows="10">Эволюция, развитие:				vývoj
+Нравственный:					mravní
+Общественный:					společenský
+Соотношение:					poměr
+Отношение:						vztah
+В качестве, как кто				jakožto
+хозяйственный, экономический:	hospodářský
+Исследовать:zkoumat				prozkoumat
+Случайный:						nahodilý
+(рас)порядок:					řád
+Среда:							prostředí
+Заниматься:						zabývat se
+Действительность:				skutečnost
+Источник:						pramen
+Посколько:						jelikož
+Деятельность:					činnost
+Пользователь:					uživatel
+Исследователь:					badatel
+Слишком:						příliš
+Излишний:						přílišný
+Сокрушающий:					drtivý
+Отличить:						odlišit
+характер:						povaha
+Свойство:						vlastnost
+Главным образом:				zejména
+Опыт:							zkušenosti
+Изобрести:						vynalézt
+Способность:					schopnost
+Выразить:						vyjádřit
+Содержание:						obsah
+Инструмент:						nástroj
+Условие:						podmínka
+Сложный:						složitý
+Однако:							však
+Специалист:						odborník
+Стараться:						snažit se</textarea>
+            <input id="run" type="button" value="run" onclick="run();" />
+            </div>
+            <script>
+                function hideSettings() {
+                    var x = document.getElementById("settings");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div class="bugs">
+        
+    </div>
+    <div class="history" id="history">
+        
+    </div>
+</body>
+</html>

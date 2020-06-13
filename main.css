@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+    background-color: #cedce7;
+    color: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+textarea {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 80pt;
+    width: 100%;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.output, .input, .settings {
+    border: 3px solid white;
+    margin-bottom: 3px;
+}
+
+.correct, .wrong {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#settings {
+    display: none;
+}
